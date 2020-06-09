@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0" prefWidth="984.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.controllerDoiMatKhau">
+   <children>
+      <Label layoutX="660.0" layoutY="54.0" text="Số Dư Tài Khoản" underline="true">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSoDuTK" editable="false" layoutX="808.0" layoutY="53.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtIDTK" editable="false" layoutX="808.0" layoutY="14.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="660.0" layoutY="15.0" text="Số Tài Khoản" underline="true">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button defaultButton="true" mnemonicParsing="false" onAction="#Back" prefHeight="39.0" prefWidth="121.0" text="Back" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="383.0" layoutY="171.0" text="Đổi Mật Khẩu" textFill="#489721" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="pwfOld" layoutX="418.0" layoutY="268.0" prefHeight="29.0" prefWidth="257.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="pwfNew" layoutX="418.0" layoutY="314.0" prefHeight="29.0" prefWidth="257.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="pwfReP" layoutX="418.0" layoutY="362.0" prefHeight="29.0" prefWidth="257.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <Label layoutX="279.0" layoutY="270.0" text="Mật Khẩu Cũ">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="272.0" layoutY="315.0" text="Mật Khẩu Mới">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="225.0" layoutY="364.0" text="Xác Nhận Mật Khẩu">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button defaultButton="true" layoutX="452.0" layoutY="456.0" mnemonicParsing="false" onAction="#DoiMK" text="Đổi Mật Khẩu">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblCPass" layoutX="697.0" layoutY="275.0" />
+      <Label fx:id="lblCNP" layoutX="697.0" layoutY="320.0" />
+      <Label fx:id="lblCRpass" layoutX="697.0" layoutY="369.0" />
+   </children>
+</Pane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane fx:id="frame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.controllerfrDangNhap">
+   <children>
+      <Pane fx:id="frDangNhap" layoutX="21.0" layoutY="121.0" prefHeight="267.0" prefWidth="485.0" style="-fx-border-color: black;">
+         <children>
+            <TextField fx:id="txtUs" layoutX="200.0" layoutY="51.0" prefHeight="30.0" prefWidth="216.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="78.0" layoutY="53.0" text="Tài Khoản" textFill="#2bc635">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="114.0" text="Mật Khẩu" textFill="#4fcd29">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="pwfPass" layoutX="200.0" layoutY="114.0" prefHeight="25.0" prefWidth="216.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+            <Button defaultButton="true" layoutX="200.0" layoutY="192.0" mnemonicParsing="false" onAction="#DangNhap" text="Đăng Nhập">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="32.0" layoutY="14.0" prefHeight="27.0" prefWidth="111.0" text="Đăng Nhập" textFill="#58e12e">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button defaultButton="true" mnemonicParsing="false" onAction="#Back" prefHeight="27.0" prefWidth="82.0" text="Back" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
