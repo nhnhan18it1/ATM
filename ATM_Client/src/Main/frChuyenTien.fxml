@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="669.0" prefWidth="1111.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.controllerChuyenTien">
+   <children>
+      <Button defaultButton="true" layoutY="6.0" mnemonicParsing="false" onAction="#Back" prefHeight="39.0" prefWidth="115.0" text="Back" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="727.0" layoutY="65.0" text="Số Dư Tài Khoản" underline="true">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSoDuTK" editable="false" layoutX="875.0" layoutY="64.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtIDTK" editable="false" layoutX="875.0" layoutY="25.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="727.0" layoutY="26.0" text="Số Tài Khoản" underline="true">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="353.0" layoutY="101.0" text="CHUYỂN TIỀN" textFill="#116108" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="177.0" layoutY="216.0" text="Tài khoản nhận tiền">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="177.0" layoutY="298.0" text="Số tiền cần chuyển">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="177.0" layoutY="368.0" text="Xác nhận mật khẩu">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtIDNN" layoutX="444.0" layoutY="214.0" prefHeight="39.0" prefWidth="292.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtSoTien" layoutX="444.0" layoutY="296.0" prefHeight="39.0" prefWidth="292.0" text="0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button defaultButton="true" layoutX="469.0" layoutY="491.0" mnemonicParsing="false" onAction="#ChuyenTien" prefHeight="49.0" prefWidth="174.0" text="Hoàn Thành">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="pwfXacNhanMK" layoutX="444.0" layoutY="366.0" prefHeight="39.0" prefWidth="292.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <Label fx:id="lblCIDNN" layoutX="743.0" layoutY="223.0" text="Label" />
+      <Label fx:id="lblCST" layoutX="743.0" layoutY="305.0" text="Label" />
+      <Label fx:id="lblCPW" layoutX="743.0" layoutY="375.0" text="Label" />
+      <Pane fx:id="pnIn4" layoutX="792.0" layoutY="164.0" prefHeight="315.0" prefWidth="292.0" style="-fx-border-color: black;">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="182.0" prefWidth="174.0" style="-fx-border-color: black;" text="Label" />
+            <TextField layoutX="14.0" layoutY="205.0" prefHeight="31.0" prefWidth="220.0" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

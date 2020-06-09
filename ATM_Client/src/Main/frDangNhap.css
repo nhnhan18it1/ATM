@@ -1,0 +1,8 @@
+#frDangNhap{
+    -fx-background-color: rgba(0, 0, 0, 0.521);
+}
+#frame{
+    -fx-background-image: url("file:///C:/Users/nhavb/eclipse-workspace/ATM_Client/img/3-nguyen-tac-vang-quan-ly-tai-chinh-ca-nhan-1.jpg");
+    -fx-background-position: center;
+    -fx-background-size: cover;
+}

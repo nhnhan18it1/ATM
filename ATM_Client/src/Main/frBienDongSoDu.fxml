@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="754.0" prefWidth="1085.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.controllerBienDongSoDu">
+   <children>
+      <TableView fx:id="tableView" layoutY="175.0" prefHeight="580.0" prefWidth="707.0">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="99.0" text="Mã Số Tài Khoản" />
+          <TableColumn fx:id="ThoiGian" prefWidth="204.0" text="Thời Gian" />
+            <TableColumn fx:id="ID_TD" prefWidth="122.0" text="Tài Khoản Tác Động" />
+            <TableColumn fx:id="LoaiTD" prefWidth="118.0" text="Loại Biến Động" />
+            <TableColumn fx:id="STBD" prefWidth="163.0" text="Số Tiền Biến Động" />
+        </columns>
+      </TableView>
+      <Button defaultButton="true" mnemonicParsing="false" onAction="#Back" prefHeight="39.0" prefWidth="105.0" text="Back" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="707.0" layoutY="45.0" text="Số Dư Tài Khoản" underline="true">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSoDuTK" editable="false" layoutX="855.0" layoutY="44.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtIDTK" editable="false" layoutX="855.0" layoutY="5.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="707.0" layoutY="6.0" text="Số Tài Khoản" underline="true">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Pane layoutX="711.0" layoutY="175.0" prefHeight="580.0" prefWidth="365.0" style="-fx-border-color: black;">
+         <children>
+            <TextField fx:id="txtID_BTD" editable="false" layoutX="175.0" layoutY="122.0" prefHeight="25.0" prefWidth="176.0" />
+            <Label layoutX="71.0" text="Thông Tin Chi Tiết" textFill="#427c20" underline="true">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="124.0" text="Mã Số Tài Khoản" underline="true">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="158.0" text="Tên Chủ Tài Khoản" underline="true">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtTenCK_BTD" editable="false" layoutX="175.0" layoutY="156.0" prefHeight="25.0" prefWidth="176.0" />
+            <Label layoutX="41.0" layoutY="396.0" text="Thời Gian" underline="true">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtThoiGian_TD" editable="false" layoutX="175.0" layoutY="393.0" prefHeight="25.0" prefWidth="176.0" />
+            <Label layoutX="17.0" layoutY="290.0" prefHeight="29.0" prefWidth="113.0" text="Mã Số Tài Khoản" underline="true">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtID_TD" editable="false" layoutX="175.0" layoutY="292.0" prefHeight="25.0" prefWidth="176.0" />
+            <Label layoutX="14.0" layoutY="329.0" text="tên Chủ Tài Khoản" underline="true">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtTenCK_TD" editable="false" layoutX="175.0" layoutY="327.0" prefHeight="25.0" prefWidth="176.0" />
+            <Label layoutX="52.0" layoutY="236.0" text="Thông Tin Tài Khoản Tác Động" textFill="#427c20" underline="true">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="74.0" text="Thông Tin Tài Tài Khoản Bị Tác Động" textFill="#427c20" underline="true">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="61.0" layoutY="359.0" text="Thông Tin Biến Động tài Khoản" textFill="#427c20" underline="true">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtSoTien_BD" editable="false" layoutX="173.0" layoutY="429.0" prefHeight="25.0" prefWidth="176.0" />
+            <Label layoutX="39.0" layoutY="432.0" text="Số Tiền biến Động" underline="true">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtLoai_BD" editable="false" layoutX="173.0" layoutY="465.0" prefHeight="25.0" prefWidth="176.0" />
+            <Label layoutX="39.0" layoutY="468.0" text="Loại Biến Động" underline="true">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="305.0" layoutY="85.0" text="Biến Động Số Dư" textFill="#4d9a29" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
